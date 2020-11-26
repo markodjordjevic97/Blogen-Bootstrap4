@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top p-0">
+        <div class="container">
+            <a href="./index.html" class="navbar-brand">Blogen</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navLink">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navLink" class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item px-2"><a href="./index.html" class="nav-link">Dashboard</a></li>
+                    <li class="nav-item px-2"><a href="./posts.html" class="nav-link active">Posts</a></li>
+                    <li class="nav-item px-2"><a href="./categories.html" class="nav-link">Categories</a></li>
+                    <li class="nav-item px-2"><a href="./users.html" class="nav-link">Users</a></li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item px-2 dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                            <i class="fas fa-user"></i>
+                            Welcome Brad
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item"><a href="./profile.html" class="nav-link text-dark">
+                                    <i class="fas fa-user-circle"></i>
+                                    Profile
+                                </a></li>
+                            <li class="dropdown-item"><a href="./settings.html" class="nav-link text-dark">
+                                    <i class="fas fa-cog"></i>
+                                    Settings
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item px-2"><a href="./logout.html"  class="nav-link">
+                            <i class="fas fa-user-times"></i>
+                            Logout
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Header -->
+    <header class="home-section bg-primary text-white mt-4 pt-4 pb-2">
+        <div class="container">
+            <h1>
+                <i class="fas fa-pencil-alt"></i>
+                Posts
+            </h1>
+        </div>
+    </header>
+    <!-- Content section -->
+    <section class="content-section" style="background-color: rgb(247, 247, 247);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 ml-auto py-4">
+                    <div class="input-group">
+                        <input class="form-control" type="search" placeholder="Search Posts...">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- table section -->
+    <section class="table-section py-4" style="background-color: rgb(247, 247, 247);">
+        <div class="container">
+            <div class="card card-body text-dark p-0">
+                <h4 class="p-3">Latest Posts</h4>
+                <table class="table table-striped">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>#</th>
+                            <th>Title</th>
+                            <th>Category</th>
+                            <th>Date</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Post One</td>
+                            <td>Web Development</td>
+                            <td>May 10 2018</td>
+                            <td>
+                                <a href="./postOne.html" class="btn btn-secondary"><i class="fas fa-angle-double-right"></i>
+                                    Details</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Post One</td>
+                            <td>Web Development</td>
+                            <td>May 10 2018</td>
+                            <td>
+                                <a href="./postOne.html" class="btn btn-secondary"><i class="fas fa-angle-double-right"></i>
+                                    Details</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Post One</td>
+                            <td>Web Development</td>
+                            <td>May 10 2018</td>
+                            <td>
+                                <a href="./postOne.html" class="btn btn-secondary"><i class="fas fa-angle-double-right"></i>
+                                    Details</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Post One</td>
+                            <td>Web Development</td>
+                            <td>May 10 2018</td>
+                            <td>
+                                <a href="./postOne.html" class="btn btn-secondary"><i class="fas fa-angle-double-right"></i>
+                                    Details</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Post One</td>
+                            <td>Web Development</td>
+                            <td>May 10 2018</td>
+                            <td>
+                                <a href="./postOne.html" class="btn btn-secondary"><i class="fas fa-angle-double-right"></i>
+                                    Details</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Post One</td>
+                            <td>Web Development</td>
+                            <td>May 10 2018</td>
+                            <td>
+                                <a href="./postOne.html" class="btn btn-secondary"><i class="fas fa-angle-double-right"></i>
+                                    Details</a>
+                            </td>
+                        </tr>
+                        <tr>
+                    </tbody>
+                </table>
+                <ul class="pagination ml-3">
+                    <li class="page-item  disabled">
+                        <a href="" class="page-link">
+                            <i class="fas fa-angle-double-left"></i>
+                            Previous
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a href="" class="page-link bg-primary text-white">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="" class="page-link">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="" class="page-link">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="" class="page-link">
+                            <i class="fas fa-angle-double-right"></i>
+                            Next
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-section py-5 bg-dark text-white">
+        <p class="lead text-center">Copyright &copy; 2020 Blogen</p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
